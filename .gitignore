@@ -1,0 +1,29 @@
+# Raw data kept for reproducibility
+# data/raw/
+# data/processed/
+# Stories_data/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# IDE & OS
+.env
+.DS_Store
+.ipynb_checkpoints/
+*.Zone.Identifier
+
+# Claude Code internals
+.claude/
+CLAUDE.md
+
+# Personal files (not part of deliverable)
+PROJECT_REPORT.md
+786517683-Art-of-Creating-Ads-That-Scale-1-1*
+
+# Generated reports (regenerate with: python -m src.generate_report)
+reports/*.pdf

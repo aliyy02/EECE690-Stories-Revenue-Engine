@@ -114,7 +114,11 @@ def generate_executive_summary():
     pdf.set_font("Helvetica", "", 11)
     pdf.set_text_color(*C_GOLD)
     pdf.cell(0, 7, "Revenue Action Engine  |  Full Year 2025 Analysis", new_x="LMARGIN", new_y="NEXT")
-    pdf.ln(6)
+    pdf.ln(3)
+    pdf.set_font("Helvetica", "", 10)
+    pdf.set_text_color(*C_DARK)
+    pdf.cell(0, 6, "Prepared by: Ali Yaakoub, Ali Nasrallah, Malek Bakkar", new_x="LMARGIN", new_y="NEXT")
+    pdf.ln(4)
 
     # Problem Statement
     pdf.section_title("Business Context")

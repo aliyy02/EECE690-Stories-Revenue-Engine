@@ -95,10 +95,13 @@ ML/
 
 ## Data
 
-Raw data is not included in this repository (proprietary POS exports). The dashboard includes a CSV upload page so data can be loaded through the UI.
+Raw CSV exports and processed parquet files are included in the repository for reproducibility:
 
-Four CSV files are expected:
-1. `REP_S_00134_SMRY.csv` — Monthly sales by branch (YoY)
-2. `rep_s_00014_SMRY.csv` — Product-level profitability
-3. `rep_s_00191_SMRY-3.csv` — Sales by product groups
-4. `rep_s_00673_SMRY.csv` — Category profit summary
+| File | Description | Rows |
+|------|-------------|------|
+| `Stories_data/REP_S_00134_SMRY.csv` | Monthly sales by branch (YoY) | 111 |
+| `Stories_data/rep_s_00014_SMRY.csv` | Product-level profitability | 14,584 |
+| `Stories_data/rep_s_00191_SMRY-3.csv` | Sales by product groups | 14,139 |
+| `Stories_data/rep_s_00673_SMRY.csv` | Category profit summary | 108 |
+
+Pre-processed parquets are in `data/processed/` so the dashboard works immediately without running the cleaning pipeline. To re-process from raw CSVs, run `python -m src.cleaning`. New data can also be uploaded through the dashboard's **Upload New Data** page.
